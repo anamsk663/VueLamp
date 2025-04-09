@@ -19,6 +19,7 @@
                 <li><a href="">Affordable</a></li>
             </ul>
             <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            <button type="button" onclick="toggleBackground()" id="bgBtn"><span></span></button>
         </nav>
 
         <div class="lamp-container">
@@ -43,10 +44,18 @@
 
     <script>
         var btn = document.getElementById("btn");
+        var bgBtn = document.getElementById("bgBtn");
         var light = document.getElementById("light");
+        var hero = document.querySelector(".hero");
+
         function toggleBtn(){
             btn.classList.toggle("active"); 
             light.classList.toggle("on");
+        }
+
+        function toggleBackground(){
+            bgBtn.classList.toggle("active");
+            hero.classList.toggle("grey-bg");
         }
     </script>
 </body>
