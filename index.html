@@ -24,7 +24,7 @@
 
         <div class="lamp-container">
             <img src="/lamp.png" class="lamp">
-            <img src="/ligt2.png" class="light" id="light">    
+            <img src="/light.png" class="light" id="light">    
         </div>
 
         <div class="text-container">
@@ -43,15 +43,21 @@
     </div>
 
     <script>
-        var btn = document.getElementbyId("btn");
+        var btn = document.getElementById("btn");
+        var bgBtn = document.getElementById("bgBtn");
+        var light = document.getElementById("light");
+        var hero = document.querySelector(".hero");
+
         function toggleBtn(){
             btn.classList.toggle("active"); 
-            light.classList.on("on")
+            light.classList.toggle("on");
         }
 
-        function nothing(){
-            // print("Heylo world");
+        function toggleBackground(){
+            bgBtn.classList.toggle("active");
+            hero.classList.toggle("grey-bg");
         }
+
     </script>
 </body>
 </html>
