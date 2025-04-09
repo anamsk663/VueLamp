@@ -155,3 +155,8 @@ nav ul{
 .on{
     opacity: 1;
 }
+
+.grey-bg {
+    background: #404040 !important;
+    transition: background 0.5s;
+}

@@ -19,6 +19,7 @@
                 <li><a href="">Affordable</a></li>
             </ul>
             <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            <button type="button" onclick="toggleBackground()" id="bgBtn"><span></span></button>
         </nav>
 
         <div class="lamp-container">
@@ -42,10 +43,10 @@
     </div>
 
     <script>
-        var btn = document.getElementById("btn");
+        var btn = document.getElementbyId("btn");
         function toggleBtn(){
             btn.classList.toggle("active"); 
-            light.classList.toggle("on")
+            light.classList.on("on")
         }
     </script>
 </body>
