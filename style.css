@@ -59,6 +59,7 @@ nav ul{
     outline: 0;
     cursor: pointer;
     transition: background 0.5s;
+    margin-left: 10px;
  }
 
  button span{
